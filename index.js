@@ -106,13 +106,16 @@ const degerlendirmeler = [
 	Yukarıdaki degerlendirmeler dizisini(array) kullanarak:
 	1. Sadece Ahmet'in geribildirimini konsolda görüntüleyin - fonksiyona gerek yok
 */
+console.log("Ahmet's review:", degerlendirmeler[5]["geribildirim"]);
 
 /*  Görev 4 (ototest yok):  
 	Reyna'nın geribildirimi girilmemiş! Aşağıdakileri uygulayın: (fonksiyona gerek yok) 
 	1. Bu geribildirimi Reyna'nın değerlendirmesine ekleyin - "bu mekan bir harika dostum, yine de garsonun gülümsememesinden puan kırdım"
 	2. degerlendirmeler dizisini konsolda görüntüleyerek çalışmanızı kontrol edin
 */
-
+degerlendirmeler[7]["geribildirim"] =
+  "bu mekan bir harika dostum, yine de garsonun gülümsememesinden puan kırdım";
+console.log("Reyna's review:", degerlendirmeler[7]["geribildirim"]);
 /*  Görev 5: 
 	isim, puan, geribildirim'i içeren bir değerlendirme nesnesi oluşturup, yeni değerlendirmeyi mevcut dizinin(array) sonuna ekleyip sonuç dizisini döndüren bir fonksiyon tanımlayın. 
 	
@@ -124,7 +127,10 @@ const degerlendirmeler = [
 	4. Güncellenmiş diziyi döndürecek
 */
 
-function DegerlendirmeEkle(/*Kodlar buraya */) {
+function DegerlendirmeEkle(dizi1, isim1, puan1, geribildirim1) {
+  const newdizi = [...degerlendirmeler];
+  newdizi.push({ isim: isim1, puan: puan1, geribildirim: geribildirim1 });
+  return newdizi;
   /*Kodlar buraya */
 }
 
