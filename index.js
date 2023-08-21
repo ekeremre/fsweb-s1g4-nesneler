@@ -160,8 +160,10 @@ function AnahtardanDegerlendirmeAl(dizi, indeksno) {
 	Not: Eğer 4. görevi başarıyla yaptıysanız kişinin geribildirimi boş görünmemeli
 */
 
-function SonDegerlendirmeyiAl(/*Kodlar buraya*/) {
-  /*Kodlar buraya*/
+function SonDegerlendirmeyiAl(dizi) {
+  return `${dizi[dizi.length - 1]["isim"]} isimli kişi ${
+    dizi[dizi.length - 1]["puan"]
+  } puan verdi ve şunları yazdı: ${dizi[dizi.length - 1]["geribildirim"]}`;
 }
 
 /////////////// BONUS  GÖRVLER////////////////////
