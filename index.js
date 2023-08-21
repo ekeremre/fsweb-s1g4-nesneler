@@ -144,8 +144,8 @@ function DegerlendirmeEkle(dizi1, isim1, puan1, geribildirim1) {
 	Örnek: AnahtardanDegerlendirmeAl(degerlendirmeler,0) şunu döndürmeli: "Nalan isimli kişi 5 puan verdi ve şunları yazdı: Mükemmel atmosfer ve mükemmel vegan seçenekleri!"
 */
 
-function AnahtardanDegerlendirmeAl(/*Kodlar buraya*/) {
-  /*Kodlar buraya*/
+function AnahtardanDegerlendirmeAl(dizi, indeksno) {
+  return `${dizi[indeksno]["isim"]} isimli kişi ${dizi[indeksno]["puan"]} puan verdi ve şunları yazdı: ${dizi[indeksno]["geribildirim"]}`;
 }
 
 /*  Görev 7:  
