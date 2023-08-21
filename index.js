@@ -48,6 +48,13 @@ const burger = {
   isim: "Burger",
   fiyat: 18,
   kategori: "Öğle Yemeği",
+  indirim: function (musteri) {
+    if (musteri === "öğretmen" || musteri === "öğrenci") {
+      return this.fiyat * (1 - 0.25);
+    } else if (musteri === "diğer") {
+      return this.fiyat * (1 - 0.1);
+    }
+  },
 };
 
 ///////////////Değerlendirmeler (MVP)///////////////////
